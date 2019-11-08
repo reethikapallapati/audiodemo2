@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:fillViewport="false">
+    <LinearLayout
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.example.harsha.audiodemo.MainActivity"
+        android:orientation="vertical"
+        android:weightSum="1">
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="Sia the Greatest !"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:fontFamily="cursive"
+            android:textSize="30sp"
+            android:textStyle="normal|bold|italic"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textColorHighlight="@color/colorPrimary" />
+
+        <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal">
+
+       <Button
+            android:id="@+id/playid"
+            android:layout_margin="10dp"
+            android:layout_height="60dp"
+            android:layout_width="80dp"
+            android:text="play |>"
+            />
+            <Button
+                android:id="@+id/pauseid"
+                android:layout_margin="10dp"
+                android:layout_height="60dp"
+                android:layout_width="80dp"
+                android:text="Pause ||"
+                />
+            <Button
+                android:id="@+id/forwardid"
+                android:layout_margin="10dp"
+                android:layout_height="60dp"
+                android:layout_width="80dp"
+                android:text=">>"
+                />
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/backid"
+            android:layout_margin="10dp"
+            android:layout_height="60dp"
+            android:layout_width="wrap_content"
+            android:text="Clock"
+            android:layout_weight="0.05" />
+
+        <Button
+            android:id="@+id/gtaid"
+            android:layout_margin="10dp"
+            android:layout_height="60dp"
+            android:layout_width="80dp"
+            android:text="GTA"
+            android:onClick="gta"
+            />
+        <Button
+            android:id="@+id/calid"
+            android:layout_margin="10dp"
+            android:layout_height="60dp"
+            android:layout_width="80dp"
+            android:text="calender"
+            android:textSize="10sp"
+
+            />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <Button
+                android:id="@+id/tvbid"
+                android:layout_margin="10dp"
+                android:layout_height="60dp"
+                android:layout_width="90dp"
+                android:text="BATTERY"
+                android:onClick="tvb"
+                android:layout_weight="1.02" />
+
+            <TextView
+                android:textAlignment="center"
+                android:layout_height="50dp"
+                android:layout_width="60dp"
+                android:id="@+id/tvb"
+                android:layout_marginLeft="30dp"
+                android:hint=" battery status"
+                />
+            <TextView
+                android:layout_marginLeft="40dp"
+                android:textAlignment="center"
+                android:layout_height="50dp"
+                android:layout_width="60dp"
+                android:id="@+id/cal"
+                android:hint=" show calander"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/tvdid"
+                android:layout_margin="10dp"
+                android:layout_height="60dp"
+                android:layout_width="80dp"
+                android:text="date"
+                android:onClick="tvd"/>
+
+            <TextView
+                android:textAlignment="center"
+                android:layout_height="50dp"
+                android:layout_width="160dp"
+                android:id="@+id/tvd"
+                android:hint=" today's date "
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/tvtid"
+                android:layout_margin="10dp"
+                android:layout_height="60dp"
+                android:layout_width="80dp"
+                android:text="show time"
+                android:onClick="tvt"/>
+            <TextView
+                android:textAlignment="center"
+                android:layout_height="50dp"
+                android:layout_width="160dp"
+                android:id="@+id/tvt"
+                android:hint=" time "
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/tvddid"
+                android:layout_margin="10dp"
+                android:layout_height="60dp"
+                android:layout_width="120dp"
+                android:text="device details"
+                android:onClick="tvdd"/>
+            <TextView
+                android:textAlignment="center"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/tvdd"
+                android:hint=" device details "
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>
